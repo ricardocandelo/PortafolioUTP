@@ -1,0 +1,51 @@
+.card{
+    position:  initial;
+    
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+/*.video:hover{
+    transform: scale(1.05);
+    filter: grayscale(50%);
+    cursor: pointer;
+    
+}*/
+.container-video{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(-300%);
+    background: hsla(0, 0%, 0%, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease-in;
+
+}
+.move{
+    transform: translate(0);
+}
+.video-show{
+    height: 80%;
+    display: block;
+    object-fit: cover;
+}
+
+.bx.bx-x{
+    position: absolute;
+    color: white;
+    top: 20px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
